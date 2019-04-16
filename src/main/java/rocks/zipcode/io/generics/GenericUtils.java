@@ -8,6 +8,7 @@ public class GenericUtils {
      * @param <T>        - type of collection
      * @return array with contents identical to `collection`
      */
+    @SuppressWarnings("unchecked")
     public static <T> T[] toArray(Collection<T> collection) {
         return (T[]) collection.toArray();
     }
