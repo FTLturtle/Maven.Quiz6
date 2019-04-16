@@ -30,7 +30,8 @@ public class StringUtils {
         return allCasingsList;
     }
 
-    static List<List<Integer>> getPowerSetOfIntArray(int[] set) {
+    // Uses bitwise math to create a power set of an int array.
+    private static List<List<Integer>> getPowerSetOfIntArray(int[] set) {
         int setSize = set.length;
         int powSetSize = (int) Math.pow(2, setSize);
         List<List<Integer>> powerSet = new ArrayList<>(powSetSize);
